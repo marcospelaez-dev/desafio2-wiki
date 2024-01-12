@@ -33,7 +33,9 @@ function App() {
   }
 
   const handleremoveRepo = (id) => {  
-    
+    let novoRepos = repos.filter((repo) => repo.id !== id);    
+    setRepos(novoRepos); 
+    novoRepos = [''];
   }
 
   return (
